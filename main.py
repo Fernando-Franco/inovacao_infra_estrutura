@@ -1,8 +1,9 @@
-from import EmonLib.h
+from math_energy import *
 
-EmonLib.EnergyMonitor.current(D0, 111.1) # Corrente: pino de entrada, calibração.
+SCT = D1
+Volt = 230.0
 
 while True:
-    Amper = EmonLib.EnergyMonitor.calcIrms(1480)  #Calcular somente Irms
-    print(Amper*230.0) #Potência aparente 
+    Amper = calcIrms(1480, SCT)  #Calcular somente Irms
+    print(Amper*Volt) #Potência aparente 
     print(Amper) #Irms
