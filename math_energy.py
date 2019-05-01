@@ -1,7 +1,6 @@
 offsetI = 0
 filteredI = 0
 sqI = sumI = 0
-int16_t sampleI
 Irms = 0
 
 def raiz(fg):
